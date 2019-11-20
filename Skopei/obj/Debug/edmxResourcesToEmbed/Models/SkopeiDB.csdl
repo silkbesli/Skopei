@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SkopeiDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SkopeiDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="SkopeiDBModel.Products" />
+    <EntitySet Name="Users" EntityType="SkopeiDBModel.Users" />
+  </EntityContainer>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Quantity" />
+    <Property Type="Int32" Name="Price" />
+    <Property Type="DateTime" Name="DateModified" Precision="3" />
+    <Property Type="DateTime" Name="DateCreated" Precision="3" />
+    <Property Type="Boolean" Name="Deleted" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="4000" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateModified" Precision="3" />
+    <Property Type="DateTime" Name="DateCreated" Precision="3" />
+    <Property Type="Boolean" Name="Deleted" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="419da42dfc3f45ad870c99b8ac076e75" Name="Diagram1">
+        <EntityTypeShape EntityType="SkopeiDBModel.Products" Width="1.5" PointX="7.7949866185872754" PointY="15.425680272013732" />
+        <EntityTypeShape EntityType="SkopeiDBModel.Users" Width="1.5" PointX="11.94491856915174" PointY="7.6428895181244654" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
